@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/Chiranth-Janardhan-moger/pipeline.git'
+                git 'https://github.com/Chiranth-Janardhan-moger/python-demo.git'
             }
         }
 
         stage('Run') {
             steps {
-                sh 'python app.py'
+                bat 'python app.py'
             }
         }
     }
